@@ -1,5 +1,6 @@
 <h1><%= @author.name %></h1>
 <p>Posts:</p>
 <% @author.posts.each do |post| %>
+<!-- Helpers are organized by controller, but they aren't restricted to a single controller. -->
   <div><%= post.title %> - <%= last_updated post %></div>
 <% end %>
